@@ -1,13 +1,18 @@
 body { margin: 0 auto; width: 1200px; }
 
+button { padding: 15px 20px; background-color: rgb(13, 138, 255); border: none; border-radius: 5px; box-shadow: 2px 2px 2px rgb(58, 156, 248); color: white; font-size: 18px; text-decoration: none; cursor: pointer; }
+
 h1,h2,h3 { margin-left: 30px; }
 h2 { color: #34495e;}
 h3 { font-weight: normal; }
-p { margin: 30px; font-size: 18px;}
+p { margin: 20px; font-size: 18px;}
+
 
 .bold { font-weight: bold; }
 .center { text-align: center; }
 .main-border { border-bottom: 1px solid #ebebeb; margin: 30px 0; }
-.non-margin { margin: 0 30px; }
+
+.ptag { margin: 0; }
+
 .space { padding: 50px; }
 .half-space { padding: 25px; }
