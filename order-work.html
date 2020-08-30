@@ -1,11 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUCK LOGISTICS</title>
+    <link rel="stylesheet" href="https://chuckofficial.github.io/chuckofficial/css/main.css">
 </head>
 <body>
-    <h1 style="font-size: 60px; font-weight: bold;">404 NOT FOUND!</h1>
+    <h1>발주</h1>
+
+    <!-- 목차 -->
+    <ul><p style="margin: 0; font-size: 16px; font-weight: bold;">목차</p>
+        <li style="margin-top: 20px;"><a href="#auto-order">자동 발주</a>
+
+        </li>
+        <li><a href="#manual-order">수동 발주</a>
+            <ul><p style="margin: 10px 0 5px; font-size: 16px; font-weight: bold;">
+                이지어드민 발주내역 업로드하는 업체
+            </p>
+                <li><a href="#ssf">SSF SHOP 신세계</a></li>
+                <li><a href="#around-the-corner">어라운드 더 코너</a></li>
+                <li><a href="#a-land">에이랜드</a></li>
+                <li><a href="#luud">러드</a></li>
+                <li><a href="#coupang">쿠팡</a></li>
+            </ul>
+            <ul><p style="margin: 10px 0 5px; font-size: 16px; font-weight: bold;">
+                이지어드민 발주내역 업로드하지 않는 업체
+            </p>
+                <li><a href="#fdu">FDU</a></li>
+                <li><a href="#konvini">KONVINI</a></li>
+                <li><a href="#kakaoshop">카카오샵</a></li>
+                <p style="margin: 10px 0 5px; font-size: 16px; font-weight: bold;">기타</p>
+                <li><a href="#manual-upload">수동 발주 파일 업로드</a></li>
+            </ul>
+        </li>
+        <li><a href="#match">매칭 관련 설명</a></li>
+        <li><a href="#phone-case">폰케이스 발주 방법</a></li>
+        <li><a href="#order-number">수동발주 업체에 송장번호 기입방법</a>
+            <ul><p style="margin: 10px 0 5px; font-size: 16px; font-weight: bold;">
+                이지어드민 발주내역 업로드하는 업체
+            </p>
+                <li><a href="#ssf-end">SSF SHOP 신세계</a></li>
+                <li><a href="#around-end">어라운드 더 코너</a></li>
+                <li><a href="#aland-end">에이랜드</a></li>
+                <li><a href="#luud-end">러드</a></li>
+                <li><a href="#coupang-end">쿠팡</a></li>
+            </ul>
+            <ul><p style="margin: 10px 0 5px; font-size: 16px; font-weight: bold;">
+                이지어드민 발주내역 업로드하지 않는 업체
+            </p>
+                <li><a href="#fdu-end">FDU</a></li>
+                <li><a href="#konvini-end">KONVINI</a></li>
+                <li><a href="#kakaoshop-end">카카오샵</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="space"></div>
+
+    <!-- 자동 발주 -->
+    <h2 id="auto-order">자동 발주</h2>
+    <div class="main-border"></div>
+    <div class="center">
+        <img src="https://chuckofficial.github.io/chuckofficial/images/auto-order.png" alt="자동발주" width="700px">
+    </div>
+    <p>자동 발주를 통해 29CM, 서울스토어, 스타일쉐어, 무신사, 공식홈페이지의 발주 내역을 자동으로 불러올 수 있습니다.</p>
+    <p>이지오토 프로그램을 실행 후 로그인을 한 뒤에 ‘자동발주’ 버튼을 클릭해서 기다리시면 됩니다.</p>
+    <div class="space"></div>
+
+    <!-- 수동 발주 -->
+    <h2 id="manual-order">수동 발주</h2>
+    <div class="main-border"></div>
+    <p>수동 발주는 자동 발주로 발주 내역이 자동으로 불러올 수 없는 거래처들의 발주 내역을 수동으로 파일로 불러와서 이지어드민을 통해 업로드를 시켜주는 작업입니다.
+        하지만 몇몇 거래처의 경우 이지어드민으로 업로드 하지않고 송장을 바로 생성해서 발송하기도 합니다.</p>
+    <p class="non-margin">이지어드민으로 발주내역 업로드하는 업체 목록 : SSF SHOP 신세계, 어라운드 더 코너, 에이랜드, LUUD(러드), 쿠팡</p>
+    <p class="non-margin">이지어드민으로 발주내역 업로드하지않는 업체 목록 : FDU(중국 해외배송 업체), KONVINI(일본 해외배송 업체), 카카오샵</p>
+    <div class="space"></div>
+
+    <!-- 발주내용 업로드 업체 -->
+    <p class="non-margin bold">@ 이지어드민으로 발주내역 업로드하는 업체</p>
+    <!-- SSF 신세계 업로드 방법 -->
+    <h3 id="ssf">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+            onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+            href="javascript:void(0)">
+            1. SSF SHOP 신세계
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/ssf_order.png" alt="ssf-order-1" width="1000px;"></div>
+            <p>1. '주문/배송관리 - 주문현황'으로 접속합니다.</p>
+            <p>2. 검색을 누르신 후 나오는 모든 신규주문에 대해 체크하신 뒤 5번 항목인 '주문확인'을 누릅니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/ssf_order2.png" alt="ssf-order-2" width="1000px;"></div>
+            <p>1. '주문/배송관리 - 배송현황'으로 접속합니다.</p>
+            <p>2. 검색을 누르신 후 3번 항먹인 '엑셀 다운로드'를 클릭합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/ssf_order3.png" alt="ssf-order-3" width="1000px;"></div>
+            <p>1. SSF 신세계의 경우 고객 전화번호에 국제 전화번호 표기가 되므로 +82를 삭제해줍니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/ssf_order4.png" alt="ssf-order-4" width="1000px;"></div>
+            <p>1. '파일 - 다른 이름으로 저장' 클릭</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/ssf_order5.png" alt="ssf-order-5" width="1000px;"></div>
+            <p>1. 파일명을 '날짜 업체명'으로 변경합니다.</p>
+            <p>2. 파일 형식을 '쉼표로 구분된 값(.csv)'로 저장합니다.</p>
+        </div>
+    </h3>
+    <!-- 어라운드 더 코너 업로드 방법 -->
+    <h3 id="around-the-corner">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        2. 어라운드 더 코너
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/around-the-corner-order-1.png" alt="around-the-corner-order-1" width="1000px;"></div>
+            <p>1. 사이트 로그인 후 주문관리 탭으로 접속합니다.</p>
+            <p>2. '주문관리 - 송장일괄등록' 메뉴로 접속합니다.</p>
+            <p>3. '엑셀다운로드' 버튼을 통해 발주된 목록을 다운로드 받습니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/around-the-corner-order-2.png" alt="around-the-corner-order-2" width="1000px;"></div>
+            <p>1. 파일 메뉴로 들어가서 다른 이름으로 저장을 클릭합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/around-the-corner-order-3.png" alt="around-the-corner-order-3" width="1000px;"></div>
+            <p>1. 파일명을 다음과 같이 '날짜 업체명'으로 작성합니다.</p>
+            <p>2. 파일 형식을 쉼표로 구분된 값(.csv)로 저장합니다.</p>
+        </div>
+    </h3>
+    <!-- 에이랜드 업로드 방법 -->
+    <h3 id="a-land">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        3. 에이랜드
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-1.png" alt="around-the-corner-order-1" width="1000px;"></div>
+            <p>1. 사이트 로그인 후 주문관리 탭에 마우스 커서를 올리면 하단 메뉴가 팝업됩니다.</p>
+            <p>2. '주문관리 - 입금확인리스트' 메뉴로 접속합니다.</p>
+            <p>3. 신규 주문을 확인하신 후 주문 전체를 체크합니다.</p>
+            <p>4. 그 다음 결제 상태를 '배송준비중'으로 변경하신 후에 저장을 누릅니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-2.png" alt="around-the-corner-order-2" width="1000px;"></div>
+            <p>1. 다시 주문관리 팝업에서 '국내배송관리 - 배송준비중리스트' 메뉴로 접속합니다.</p>
+            <p>2. '엑셀양식선택'을 '양식'으로 변경 후에 엑셀로 저장을 통해 파일을 저장합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-3.png" alt="around-the-corner-order-3" width="1000px;"></div>
+            <p>1. 엑셀 파일을 실행하시고 '다른 이름으로 저장' 버튼을 누릅니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-4.png" alt="around-the-corner-order-3" width="1000px;"></div>
+            <p>1. 파일의 제목을 '날짜 업체'로 변경하시고 파일 형식을 '쉼표로 구분된 값(.csv)' 파일로 저장합니다.</p>
+        </div>
+    </h3>
+    <!-- 러드 업로드 방법 -->
+    <h3 id="luud">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        4. LUUD(러드)
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="images/luud-1.png" width="1100px;"></div>
+            <p>1. '주문관리' 탭으로 들어가서 2번 항목인 '배송준비중 관리' 메뉴로 접속하시면 위와 같은 화면이 보여집니다.</p>
+            <p>2. 그 후 3번 항목인 '엑셀바로다운로드'를 눌러 파일을 다운로드 받습니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="images/luud-2.png" width="1000px;"></div>
+            <p>그 후 위와 같이 넘버스 파일로 실행이 된다면 모든 내용을 복사하셔야합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="images/luud-3.png" width="1000px;"></div>
+            <p>정상적으로 엑셀 파일로 내용을 붙혀넣기 하신 후</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="images/luud-4.png" width="1000px;"></div>
+            <p>'파일 - 다른 이름으로 저장'을 통해 파일의 제목을 '날짜 업체'로 변경하시고 파일 형식을 '쉼표로 구분된 값(.csv) 파일로 저장합니다.</p>
+        </div>
+    </h3>
+    <!-- 쿠팡 업로드 방법 -->
+    <h3 id="coupang">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        5. 쿠팡
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-1.png" width="1000px"></div>
+            <p>1. '주문/배송관리' - '배송관리'로 접속합니다.</p>
+            <p>2. 결제완료 탭에서 신규주문을 확인하고 주문건을 체크합니다.</p>
+            <p>3. '발주서 다운로드' 버튼을 통해 엑셀 파일을 다운로드 받습니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-2.png" width="700px"></div>
+            <p>1. '발주서 다운로드' 버튼을 클릭하면 위와 같은 팝업창이 뜨는데 여기서 'CJ 대한통운'으로 택배사를 변경합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-3.png" width="700px"></div>
+            <p>엑셀 파일이 실행되면 주문 내역을 확인하신 후 '파일 - 다른이름으로 저장'으로 파일을 저장합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-4.png" width="700px"></div>
+            <p>1. '날짜 업체명'으로 제목을 변경합니다.</p>
+            <p>2. 파일 형식은 '쉼표로 구분된 값(.csv)'로 저장합니다.</p>
+        </div>
+    </h3>
+    <div class="space"></div>
+
+    <!-- 발주내용 업로드하지않는 업체 -->
+    <p class="non-margin bold">@ 이지어드민으로 발주내역 업로드하지않는 업체</p>
+    <h3 id="fdu">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        1. FDU(중국 해외배송 업체)
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/fdu-1.png" alt="fdu-1" width="1000px;"></div>
+            <p>1. 주문관리로 들어갑니다.</p>
+            <p>2. '배송관리 - 송장입력목록'으로 접속합니다.</p>
+            <p>3. 주문 들어온 목록을 확인합니다(신규 주문의 경우 우측에 송장번호가 기입되어있지 않습니다.)</p>
+            <p>4. '송장엑셀파일다운로드'를 클릭해서 주문목록을 다운받습니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/fdu-2.png" alt="fdu-2" width="1000px;"></div>
+            <p>다운로드 된 파일의 경우 신규주문건만 따로 저장이 됩니다. 여기서 이지어드민을 통해</p>
+            <p>FDU 업체로 발송되는 송장을 생성하고 주문된 상품들을 송장에 넣습니다. (해당 엑셀은 출고 시 박스에 동봉하므로 프린터로 출력합니다)</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/fdu-3.png" alt="fdu-3" width="1100px"></div>
+            <p>위와 같이 송장을 생성한 뒤 똑같이 출고를 진행해주시면 되며 출력한 주문 내역 프린터물을 P03 비닐에 패킹 후 출고되는 박스에 동봉하시면 됩니다)</p>
+        </div>
+    </h3>
+    <h3 id="konvini">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        2. KONVINI(일본 해외배송 업체)
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/konvini-1.png" width="1000px"></div>
+            <p>1. 로그인 후 주문관리로 들어갑니다</p>
+            <p>2. 출고 대기로 들어가시면 위와 같은 페이지가 출력됩니다.</p>
+            <p>3. 송장번호가 기입되지 않은 신규 주문을 체크하시고</p>
+            <p>4. '출고리스트다운로드'를 누르셔서 신규 주문 엑셀파일을 다운로드 받습니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/konvini-2.png" width="1000px"></div>
+            <p>엑셀 파일을 실행하신 다음 내용을 토대로 신규 송장을 만듭니다.(제품명, 컬러, 사이즈 정확히 확인)</p>
+        </div>
+    </h3>
+    <h3 id="kakaoshop">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        3. 카카오샵
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/kakao-1.png" alt="kakao-1" width="1000px"></div>
+            <p>1. '카카오톡 스토어'로 접속합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/kakao-2.png" alt="kakao-2" width="1000px"></div>
+            <p>2. 관리자 인증 후에 '배송 요청'으로 들어가면 신규 주문 확인이 가능합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/kakao-3.png" alt="kakao-3" width="1000px"></div>
+            <p>3. 송장번호가 기입되지 않은 주문들이 신규주문이며 해당 신규주문의 송장을 직접 생성해서 송장을 출력하시면 됩니다.</p>
+        </div>
+    </h3>
+    <div class="space"></div>
+
+    <h3 id="manual-upload" style="color: #34495e; font-size: 1.5em; font-weight: bold;">수동 발주 파일 업로드</h3>
+    <div class="main-border"></div>
+    <p>모든 수동 발주 파일들을 저장하신 후에 진행하게 되는 작업입니다.</p>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/manual-upload-0.png" width="1000px"></div>
+    <p style="font-style: italic;">이지어드민 사이트의 주문/배송관리 메뉴를 클릭하면 바로 보여지는 화면의 일부분을 캡쳐한 부분입니다.</p>
+    <p>1번 항목에서 판매처 이름을 확인하셔서 2번 항목의 업로드 버튼을 통해 저장한 파일을 저장합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/manual-upload-1.png" width="500px"></div>
+    <p>업로드 버튼을 누르면 뜨게되는 팝업입니다. '파일 선택' 버튼을 통해 정확한 파일을 업로드합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/manual-upload-2.png" width="500px"></div>
+    <p>업로드 진행이 완료되면 하단의 그래프에서 업로드한 업체의 그래프가 변동됩니다.</p>
+    <div class="space"></div>
+
+
+    <!-- 매칭 관련 설명 -->
+    <h2 id="match">매칭 관련 설명</h2>
+    <div class="main-border"></div>
+    <p>자동발주와 수동발주가 끝나고 난 후 이지어드민 페이지에서 매칭이 진행되며 기본적으로 주문배송관리 메뉴를 누르면 바로 연결되게 됩니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/match-1.png" alt="매칭1" width="1200px"></div>
+    <p>step1. 발주 단계에서는 발주가 된 내역이 확인되며 자동발주가 되지 않는 업체들의 파일을 업로드 할 수 있습니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/match-2.png" alt="매칭2" width="1700px"></div>
+    <p>step2. 메모 단계는 고객들의 메모를 확인 할 수 있는 화면이며 건너뛰어도 무관합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/match-3.png" alt="매창3" width="1700px"></div>
+    <p>step3. 매칭 단계에서는 매칭버튼을 누른 뒤 해당 주문에 맞는 <mark>상품을 정확하게</mark> 찾아서 매칭해주셔야 합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/match-3-1.png" alt="매창3" width="1200px"></div>
+    <p>step3-1. 1번 항목에서 상품명과 옵션을 확인하고, 2번 항목에 상품을 검색해서 오른쪽의 선택을 누르시고 3번 항목에서 맞는지 확인합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/match-4.png" alt="매칭4" width="1700px"></div>
+    <p>step4. 합포 단계에서는 수령자와 주소, 전화번호가 동일하면 합포를 진행하며 다를 경우에는 상품을 따로 받기위해 주문하셨을 경우가 있으니 합포를 진행하지 않습니다.</p>
+    <div class="space"></div>
+
+    <!-- 폰케이스 발주 방법 -->
+    <h2 id="phone-case">폰케이스 발주 방법</h2>
+    <div class="main-border"></div>
+    <p>폰케이스의 경우 자동발주와 수동발주를 끝마친 후 매칭까지 끝내시고 진행하셔야 됩니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/phonecase-2.png" alt="폰케이스발주" width="700px"></div>
+    <p>이지어드민 내에서 '주문배송관리' 메뉴를 클릭한 후 '배송관리-주문다운로드' 메뉴로 접속합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/phonecase-1.png" alt="폰케이스발주" width="1200px"></div>
+    <p>검색 전에 몇 가지의 옵션을 변경해주어야 합니다.</p>
+    <p>1. 전체 공급처를 'CHUCKCASE'로 변경합니다.</p>
+    <p>2. 사용자 정의를 '폰케이스'로 변경합니다.</p>
+    <p>3. 검색을 누르면 주문이 들어온 폰케이스를 확인하실 수 있습니다.</p>
+    <p>4. 발주된 상품을 확인합니다.</p>
+    <p>5. 파일생성 버튼을 클릭해 xlsx 확장자로 저장합니다.</p>
+    <p>파일을 저장해두시면 실장님께서 업체에 주문을 넣게됩니다.</p>
+    <div class="space"></div>
+
+    <h2>폰케이스 송장번호 기입</h2>
+    <div class="main-border"></div>
+    <p>폰케이스 발주를 끝마친 후 실장님께서 케이스 제작업체에 주문을 넣게되면 업체에서 상품을 제작하게 됩니다. 그 후 업체에서 자체적으로 상품을 발송하게 되는데</p>
+    <p>상품을 발송하고 송장번호를 업체에서 엑셀파일로 정리해서 주게되는데 주문건의 송장번호를 C/S창에서 만들어진 기존 고객 송장번호와 교체를 해야합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="images/phonecase-end-1.png" width="600px;"></div>
+    <p>먼저 '웹하드 접속기'를 실행해서 로그인을 진행합니다</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="images/phonecase-end-2.png" width="1000px;"></div>
+    <p>그 후 '업체발주 - 10cm' 폴더를 선택하면 화면과 같이 비밀번호를 입력하라는 창이 뜨는데 입력을 하시고 확인을 누릅니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="images/phonecase-end-3.png" width="1000px;"></div>
+    <p>'10cm - 송장업로드' 폴더로 들어가서 당일 날짜에 맞는 엑셀 파일을 다운로드 합니다.</p>
+    <div class="half-space"></div>
+    <div class="center"><img src="images/phonecase-end-4.png" width="1100px;"></div>
+    <p>화면과 같이 엑셀 파일이 실행되면 '운송장번호'란에 있는 운송장번호를 C/S창에서 고객 이름을 입력하고, 맞는 송장에 대해 송장번호를 변경해줍니다.</p>
+    <div class="space"></div>
+    
+    <!-- 송장번호 기입 방법 -->
+    <h2 id="order-number">수동발주 업체에 송장번호 기입</h2>
+    <div class="main-border"></div>
+
+    <p class="non-margin bold">@ 이지어드민으로 발주내역 업로드하는 업체</p>
+    <h3 id="ssf-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        1. SSF SHOP 신세계
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            내용 추가 예정
+        </div>
+    </h3>
+    <h3 id="around-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        2. 어라운드 더 코너
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="images/around-the-corner-end-1.png" width="1100px;"></div>
+            <p>1. '주문관리' 탭에서 '미배송 주문내역' 메뉴로 접속하면 위와 같은 화면이 보여집니다.</p>
+            <p>2. 여기서 3번 항목인 '주문번호'를 클릭하시면</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="images/around-the-corner-end-2.png" width="1000px;"></div>
+            <p>다음과 같은 팝업창이 하나 뜨게 되는데 '배송처리' 버튼을 클릭하시면 됩니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="images/around-the-corner-end-3.png" width="1000px;"></div>
+            <p>1. 1번 항목에서 택배사와 송장번호를 기입하신 후 상품을 체크하고 처리하기를 누르면 완료됩니다.</p>
+            <div class="half-space"></div>
+        </div>
+    </h3>
+    <h3 id="aland-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        3. 에이랜드
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-end-1.png" width="1100px;"></div>
+            <p>'주문관리 - 빠른송장입력' 메뉴로 접속하면 해당 화면이 보여집니다.</p>
+            <p>2번 항목에서 배송업체와 송장번호 확인하신 후에 입력하신 다음 저장처리를 합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-end-2.png" width="1100px;"></div>
+            <p>이지어드민의 C/S창에서 송장번호를 확인해서 2번 항목에 기입합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/aland-end-3.png" width="1100px;"></div>
+            <p>'주문관리 - 송장입력완료' 메뉴로 접속하셔서 주문 내역들을 체크하신 후 저장을 누르면 끝이납니다.</p>
+        </div>
+    </h3>
+    <h3 id="luud-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        4. 러드
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="images/luud-end-1.png" width="1100px"></div>
+            <p>1. '주문관리' 탭에서 '배송준비중 관리' 메뉴로 접속하시면 위와 같은 화면이 보여집니다.</p>
+            <p>2. 3번 항목에서 택배사와 송장 번호를 기입하신 후 4번 항목 '배송대기 처리'를 클릭합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="images/luud-end-2.png" width="1100px"></div>
+            <p>1. 그 후 '주문관리 - 배송대기 관리' 메뉴로 들어가셔서 상품 체크하신 후 '배송중 처리'를 클릭하시면 완료됩니다.</p>
+        </div>
+    </h3>
+    <h3 id="coupang-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        5. 쿠팡
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-end-1.png" width="1000px;"></div>
+            <p>'주문/배송관리' 메뉴에서 배송관리로 접속합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-end-2.png" width="1000px;"></div>
+            <p>그리고 주문번호를 클릭하면 주문자정보와 수취인정보를 확인하실 수 있는데 성함을 C/S창에 검색합니다.</p>
+            <div class="half-space"></div>
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/coupang-end-3.png" width="1000px;"></div>
+            <p>그 후 'CJ 대한통운' 택배사로 변경하신 후에 C/S창에서 확인한 운송장번호를 입력하고 '선택물품배송'을 클릭합니다.</p>
+        </div>
+    </h3>
+    <div class="space"></div>
+
+    <p class="non-margin bold">@ 이지어드민으로 발주내역 업로드하지 않는 업체</p>
+    <h3 id="fdu-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        1. FDU
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="https://chuckofficial.github.io/chuckofficial/images/fdu-end-1.png" width="1150px;"></div>
+            <p>1. 주문관리로 접속합니다.</p>
+            <p>2. '배송관리 - 송장입력목록' 메뉴로 접속합니다.</p>
+            <p>3. 택배사를 CJ대한통운으로 변경하신 뒤 송장번호를 기입합니다.</p>
+            <p>4. 그리고 4번 항목인 '배송정보변경'을 누르시면 송장번호가 입력됩니다.</p>
+        </div>
+    </h3>
+    <h3 id="konvini-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        2. KONVINI
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+        </div>
+    </h3>
+    <h3 id="kakaoshop-end">
+        <a style="font-weight: bold; font-size: 20px; display: block; margin-bottom: 20px"
+        onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';"
+        href="javascript:void(0)">
+        3. 카카오샵
+        </a><div style="display: none; border: 1px dashed #cacaca; margin-top: 10px; padding-top: 30px;">
+            <div class="center"><img src="images/kakaoshop-end-1.png" width="1000px"></div>
+            <p>카카오샵 어드민으로 로그인 하신 후 다음 화면에서 순서대로 처리합니다.</p>
+            <p>1번 '검색' 버튼 클릭 후 2번 항목에서 택배사와 송장번호 기입 후 3번 항목 '수동발송처리' 버튼 클릭</p>
+        </div>
+    </h3>
+    <div class="space"></div>
+    
+
+    
 </body>
 </html>
